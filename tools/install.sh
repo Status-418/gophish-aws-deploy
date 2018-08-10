@@ -12,7 +12,7 @@ sed -i 's!127.0.0.1!0.0.0.0!g' /opt/gophish/config.json
 chmod +x /opt/gophish/gophish
 
 # Creating a SSL Cert
-openssl req -newkey rsa:2048 -nodes -keyout /opt/gophish/gophish_admin.key -x509 -days 365 -out /opt/gophish/gophish_admin.crt -batch -subj "CN=gophish.example.com"
+openssl req -newkey rsa:2048 -nodes -keyout /opt/gophish/gophish_admin.key -x509 -days 365 -out /opt/gophish/gophish_admin.crt -batch -subj "/CN=gophish.example.com"
 
 # Configuring  goPhish to run as a service
 sudo cp gophish.service /lib/systemd/system/gophish.service
