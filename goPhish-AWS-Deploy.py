@@ -54,6 +54,7 @@ def _attach_policy_to_role(clien, PolicyName, RoleName):
 
     return False
 
+
 def _add_role_to_profile(client, InstanceProfileName, RoleName):
     try:
         profile = client.get_instance_profile(InstanceProfileName=InstanceProfileName)
@@ -241,7 +242,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--InstanceName', required=True, help='Provide the name of the instance you want to stand up')
     parser.add_argument('--src_ip', required=True, help='Provide a coma seperated list of IPs that are to have access to the admin interface.')
-    parser.add_argument('--Region', default='us-west-1', help='Plrovide the Region to be used (Default: us-west-1')
+    parser.add_argument('--Region', default='us-west-1', help='Provide the Region to be used (Default: us-west-1')
     parser.add_argument('--InstanceType', default='t2.micro', help='Provide the type of the instance you want to stand up (Default: t2.micro)')
     parser.add_argument('--ImageId', default='ami-4aa04129', help='Provide the ImageID for the image you want to deploy (Default: ami-4aa04129')
     parser.add_argument('--AdminContact', help='Provide the project admin account email address')
