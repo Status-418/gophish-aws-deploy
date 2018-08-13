@@ -61,13 +61,14 @@ MIIEowIBAAKCA...
 [*] A new Role named "GophishRole" was created
 [*] Added Role: "GophishRole" to the Instance Profile: "GophishInstanceProfile"
 [*] A new EC2 Instance is being spun up
-[*] The instance is up and running. Waiting for a checks to complete
+[*] The instance is up and running. Waiting for checks to complete.
 [*] Added the required permissions to allow SSM
-[*] Waiting for the instance to complete start up
-[*] The new Instance (i-XXXXXXXXXXXXXX) is now ready to go
-[*] Starting the Installation of goPhish
-[*] The gophish installation has started
-
+[*] Waiting for the instance to finish starting start up
+[*] The new Instance (i-XXXXXXXXXXXXXXXX) is now ready to go
+[*] Preparing to install Gophish
+[*] The Gophish installation has started
+[*] The Gophish installation has completed
+[*] The setup of Gophish is complete please try connecting to the admin pannel: https://x.x.x.x.:3333
 ```
 
 # Resources Created
